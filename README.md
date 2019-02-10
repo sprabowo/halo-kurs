@@ -15,20 +15,8 @@ yarn run serve
 yarn run build
 ```
 
-### Run your tests
+### Docker
 ```
-yarn run test
+docker build -t halo-kurs/latest .
+docker run -it -p 8080:8080 --rm --name halo-kurs halo-kurs/latest
 ```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Run your unit tests
-```
-yarn run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
